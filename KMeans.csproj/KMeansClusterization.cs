@@ -1,17 +1,13 @@
 ﻿using System;
 using System.Collections.Generic;
-using System.Linq;
-using System.Reflection;
-using System.Text;
-using System.Threading.Tasks;
 
 namespace KMeans.csproj
 {
     class KMeansClusterization
     {
-        private int _k;
-        private Point[] _points;
-        private Random random = new Random();
+        private readonly int _k;
+        private readonly Point[] _points;
+        private readonly Random random = new Random();
 
         public KMeansClusterization(Point[] points, int k)
         {
